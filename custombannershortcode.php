@@ -21,15 +21,15 @@ defined('ABSPATH') or die("No puedes hacer esto !");
 define('path',plugin_dir_path(__FILE__));
 
 function bannerfootermsg() { 
-	$m = '<hr>
-					<div class="shortcodeBox">
-						<p class="shortcodeText">Recuerda, Real Comics World es una web sin ánimo de lucro.</p>
-						<p class="shortcodeText">Estos productos están siendo patrocinados por MARVEL AVENGERS !</p>
-						<img style="margin-left: 20%; padding: 0 auto;" src="https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/2513_big.jpg"/>
-						<hr>
-					</div>'; 
+	$message = '<hr>
+		<div class="shortcodeBox">
+			<p class="shortcodeText">Recuerda, Real Comics World es una web sin ánimo de lucro.</p>
+			<p class="shortcodeText">Estos productos están siendo patrocinados por MARVEL AVENGERS !</p>
+			<img style="margin-left: 20%; padding: 0 auto;" src="https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/2513_big.jpg"/>
+			<hr>
+		</div>'; 
 
-	return $m;
+	return $message;
 }
 
 add_shortcode('bannerShortcode', 'bannerfootermsg'); 
